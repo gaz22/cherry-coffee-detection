@@ -1,0 +1,9 @@
+# data (ignore large files)
+data/raw/
+
+# python
+__pycache__/
+*.pyc
+
+# virtual env
+venv/
