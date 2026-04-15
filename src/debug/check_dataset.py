@@ -12,7 +12,7 @@ def main():
     dfs = []
     for f in csv_files:
         path = os.path.join(RAW_DATA_DIR, f)
-        df = pd.read_csv(path)
+        df = pd.read_csv("data/raw/processed_dataset.csv")
         dfs.append(df)
 
     df = pd.concat(dfs, ignore_index=True)
@@ -20,8 +20,11 @@ def main():
     # health check
     print("\n=== DATASET INFO ===")
     print("Total rows:", len(df))
-    print("Columns:", len(df.columns))
+    print("Columns:", df.columns.tolist())
 
+    print("\n=== COFFEE COUNT ===")
+    print(df["scientific_name"].str.contains("coffea", case=False, na=False).sum())
+    
     # check key columns
     print("\n=== COLUMN CHECK ===")
     required = ["scientific_name", "species_guess", "common_name"]
