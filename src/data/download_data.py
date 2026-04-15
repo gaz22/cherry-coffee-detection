@@ -27,7 +27,7 @@ def load_csv_from_dir():
     return pd.concat(dataframes, ignore_index=True)
 
 # download images
-def download_images(df, limit=500):
+def download_images(df, limit=2000):
     df = df.copy()
 
     # combine metadata fields -> one text field
@@ -46,9 +46,19 @@ def download_images(df, limit=500):
     print("Plant rows:", len(plant_df))
 
     # balancing dataset
-    coffee_sample = coffee_df.sample(n=min(len(coffee_df), limit // 2), random_state=42)
-    plant_sample = plant_df.sample(n=min(len(plant_df), limit // 2), random_state=42)
+    target_size = limit // 2
 
+    coffee_sample = coffee_df.sample(
+        n=target_size,
+        replace=True if len(coffee_df) < target_size else False,
+        random_state=42
+    )
+
+    plant_sample = plant_df.sample(
+        n=target_size,
+        random_state=42
+    )
+    
     combined = pd.concat([coffee_sample, plant_sample], ignore_index=True)
 
     print("Final combined:", len(combined))
@@ -105,7 +115,7 @@ def main():
     print(f"Total records: {len(df)}")
 
     print("Download images...")
-    processed_df = download_images(df, limit=500)
+    processed_df = download_images(df, limit=2000)
 
     output_csv = os.path.join(RAW_DATA_DIR, "processed_dataset.csv")
     
