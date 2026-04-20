@@ -1,55 +1,101 @@
 import os
 import pandas as pd
+from PIL import Image
+import matplotlib.pyplot as plt
 
-RAW_DATA_DIR = "data/raw/"
+RAW_DATA_DIR = "data/raw/processed_dataset.csv"
 
-def main():
-    # load csv
-    csv_files = [f for f in os.listdir(RAW_DATA_DIR) if f.endswith(".csv")]
-
-    print("CSV count:", len(csv_files))
-
-    dfs = []
-    for f in csv_files:
-        path = os.path.join(RAW_DATA_DIR, f)
-        df = pd.read_csv("data/raw/processed_dataset.csv")
-        dfs.append(df)
-
-    df = pd.concat(dfs, ignore_index=True)
-
-    # health check
-    print("\n=== DATASET INFO ===")
+def load_data():
+    df = pd.read_csv(RAW_DATA_DIR)
+    print("\n=== BASIC INFO ===")
     print("Total rows:", len(df))
     print("Columns:", df.columns.tolist())
+    return df
 
-    print("\n=== COFFEE COUNT ===")
-    print(df["scientific_name"].str.contains("coffea", case=False, na=False).sum())
-    
-    # check key columns
-    print("\n=== COLUMN CHECK ===")
-    required = ["scientific_name", "species_guess", "common_name"]
 
-    for col in required:
-        print(f"{col}:", col in df.columns)
+# class distribution
+def check_class_balance(df):
+    print("\n=== CLASS BALANCE ===")
+    print(df["dataset_type"].value_counts())
 
-    # signal check 
-    print("\n=== COFFEE SIGNAL CHECK ===")
 
-    if "scientific_name" in df.columns:
-        n = df["scientific_name"].str.contains("coffea", case=False, na=False).sum()
-        print("scientific_name (coffea):", n)
+# check taxon
+def check_taxon_mapping(df):
+    print("\n=== TAXON CHECK ===")
 
-    if "species_guess" in df.columns:
-        n = df["species_guess"].str.contains("coffee", case=False, na=False).sum()
-        print("species_guess (coffee):", n)
+    for cls in df["dataset_type"].unique():
+        print(f"\n{cls}:")
+        print(df[df["dataset_type"] == cls]["taxon_id"].unique())
 
-    if "common_name" in df.columns:
-        n = df["common_name"].str.contains("coffee", case=False, na=False).sum()
-        print("common_name (coffee):", n)
 
-    # sanity sample (only 3 rows)
-    print("\n=== SAMPLE ROWS ===")
-    print(df[["scientific_name"]].dropna().head(3))
+# check missing values
+def check_missing(df):
+    print("\n=== MISSING VALUES ===")
+    print(df.isnull().sum())
+
+
+# check duplicate images
+def check_duplicates(df):
+    print("\n=== DUPLICATES ===")
+    print("Duplicate image paths:", df["image_path"].duplicated().sum())
+
+
+# check broken images
+def check_broken_images(df):
+    print("\n=== IMAGE INTEGRITY ===")
+
+    broken = []
+
+    for path in df["image_path"]:
+        try:
+            Image.open(path).verify()
+        except Exception:
+            broken.append(path)
+
+    print("Broken images:", len(broken))
+
+    return broken
+
+
+# random visual check
+def visualize_samples(df, n=9):
+    print("\n=== VISUAL CHECK ===")
+
+    sample = df.sample(n)
+
+    plt.figure(figsize=(10, 10))
+
+    for i, (_, row) in enumerate(sample.iterrows()):
+        try:
+            img = Image.open(row["image_path"])
+
+            plt.subplot(3, 3, i + 1)
+            plt.imshow(img)
+            plt.title(row["dataset_type"])
+            plt.axis("off")
+
+        except Exception:
+            print("Failed to load:", row["image_path"])
+
+    plt.tight_layout()
+    plt.show()
+
+
+def main():
+    df = load_data()
+
+    check_class_balance(df)
+    check_taxon_mapping(df)
+    check_missing(df)
+    check_duplicates(df)
+
+    broken = check_broken_images(df)
+
+    visualize_samples(df, n=9)
+
+    print("\n=== SUMMARY ===")
+    print("Total images:", len(df))
+    print("Broken images:", len(broken))
 
 
 if __name__ == "__main__":
