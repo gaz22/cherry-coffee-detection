@@ -1,6 +1,7 @@
 # data (ignore large files)
 data/raw/
 data/processed
+data/yolo
 
 # python
 __pycache__/

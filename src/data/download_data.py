@@ -81,7 +81,7 @@ def download_images(arabica_df, canephora_df, plant_df,
         try:
             image_data = requests.get(url, timeout=10).content
             
-            image_path = os.path.join(IMAGE_DIR, f"{i}.jpg")
+            image_path = os.path.join(IMAGE_DIR, f"{row['dataset_type']}_{i}.jpg")
 
             with open(image_path, "wb") as f:
                 f.write(image_data)
