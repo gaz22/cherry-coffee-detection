@@ -4,20 +4,15 @@ import os
 DATA_DIR = "data/"
 RAW_DATA_DIR = os.path.join(DATA_DIR, "raw")
 PROCESSED_DIR = os.path.join(DATA_DIR, "processed")
-OUTPUT_DIR = "outputs/"
-
 IMAGE_DIR = os.path.join(PROCESSED_DIR, "images")
 
 # Dataset files
-COFFEE_ZIP = os.path.join(RAW_DATA_DIR, "observations-709370.csv.zip")
+ARABICA_ZIP = os.path.join(RAW_DATA_DIR, "observations-712548.csv.zip")
+CANEPHORA_ZIP = os.path.join(RAW_DATA_DIR, "observations-713339.csv.zip")
 PLANT_ZIP = os.path.join(RAW_DATA_DIR, "observations-709374.csv.zip")
 
-# Role label
-POSITIVE_DATASET = "coffee"
-NEGATIVE_DATASET = "plant_background"
-
-# Class
-CLASSES = ["coffee_cherry"]
+# Classes
+CLASSES = ["arabica", "canephora"]
 
 # Training params
 BATCH_SIZE = 8
