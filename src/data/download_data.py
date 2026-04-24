@@ -111,14 +111,15 @@ def main():
     print("Loading CSVs...")
     arabica_df = load_csv("observations-712548.csv")
     canephora_df = load_csv("observations-713339.csv")
-    plant_df = load_csv("observations-709374.csv")
+    plant_df = load_csv("observations-716817.csv")
 
     print("Download images...")
     processed_df = download_images(
         arabica_df,
         canephora_df,
         plant_df,
-        target_per_class=300
+        target_per_class=300,
+        negative_ratio=0.1
     )
 
     output_csv = os.path.join(RAW_DATA_DIR, "processed_dataset.csv")

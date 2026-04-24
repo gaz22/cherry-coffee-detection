@@ -36,7 +36,11 @@ The YOLOv8n was selected as a lightweight baseline due to its suitability for sm
 - Validation set: 132 images
 - No overlap between splits
 
-Negative samples were included to improve model robustness by helping the detector differentiate coffee plants from non-target vegetation.
+Negative samples (60 images) were sourced from iNaturalist taxon 47693 
+(Magnoliopsida, Indonesia), specifically excluding Coffea species 
+(taxon 64342, 64345). These hard negatives share similar leaf structure 
+and geographic context with the target classes, improving the model's 
+ability to distinguish coffee plants from visually similar vegetation.
 
 ---
 
@@ -44,23 +48,22 @@ Negative samples were included to improve model robustness by helping the detect
 
 The model achieved the following validation results:
 
-| Metric | Value |
-|--------|------|
-| Precision | 0.79 |
-| Recall | 0.78 |
-| mAP@50 | 0.85 |
-| mAP@50–95 | 0.85 |
+| Metric       | Value |
+|--------------|-------|
+| Precision    | 0.793 |
+| Recall       | 0.874 |
+| mAP@50       | 0.888 |
+| mAP@50-95    | 0.886 |
 
 Overall, the model shows good performance for a baseline detector.
-
 ---
 
 ## 5. Class-wise Performance
 
-| Class | Performance (mAP approx.) |
-|------|----------------------------|
-| Coffea arabica | 0.848 |
-| Coffea canephora | 0.851 |
+| Class            | mAP@50 |
+|------------------|--------|
+| Coffea arabica   | 0.875  |
+| Coffea canephora | 0.897  |
 
 The results show balanced learning across both classes with no significant bias.
 
@@ -85,14 +88,24 @@ The results show balanced learning across both classes with no significant bias.
 
 ## 8. Limitations (Draft)
 
-- Dataset size is relatively small
-- Limited diversity in negative samples
-- Evaluation restricted to a single model (YOLOv8n)
+- Bounding boxes are full-image auto-annotations. mAP reflects species 
+  classification accuracy rather than object localisation precision. 
+  This is an intentional auto-annotation baseline approach.
+- 7 canephora images were corrupted during download and excluded 
+  (duplicate URLs due to replace=True sampling on a small source pool 
+  of 117 observations).
+- Dataset size is relatively small (660 images total).
+- Single architecture evaluated to date — RetinaNet comparison pending.
 
 ---
 
 ## 10. Conclusion
 
-This initial YOLOv8 model provides a strong foundation for coffee species detection. The results demonstrate that deep learning-based object detection is effective for distinguishing coffee plant species under real-world conditions. Further improvements and model comparisons will be conducted in the next phase of the project.
+This YOLOv8n baseline achieves mAP@50 of 0.888 with balanced per-class 
+performance (arabica: 0.875, canephora: 0.897), demonstrating that 
+species-level coffee plant detection is feasible using auto-annotated 
+iNaturalist data. The 35ms inference time confirms suitability for 
+near real-time applications. Comparison with RetinaNet and explainable 
+AI analysis will follow in the next phase.
 
 ---

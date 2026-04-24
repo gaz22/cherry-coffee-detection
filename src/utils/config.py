@@ -9,7 +9,7 @@ IMAGE_DIR = os.path.join(PROCESSED_DIR, "images")
 # Dataset files
 ARABICA_ZIP = os.path.join(RAW_DATA_DIR, "observations-712548.csv.zip")
 CANEPHORA_ZIP = os.path.join(RAW_DATA_DIR, "observations-713339.csv.zip")
-PLANT_ZIP = os.path.join(RAW_DATA_DIR, "observations-709374.csv.zip")
+PLANT_ZIP = os.path.join(RAW_DATA_DIR, "observations-716817.csv.zip")
 
 # Classes
 CLASSES = ["arabica", "canephora"]
