@@ -4,4 +4,6 @@ train: images/train
 val: images/val
 
 nc: 2
-names: ["arabica", "canephora"]
+names:
+  0: arabica
+  1: canephora
