@@ -2,9 +2,10 @@ import os
 import json
 import cv2
 
-YOLO_LABEL_DIR = "data/yolo/labels/train"
-IMAGE_DIR = "data/yolo/images/train"
-OUTPUT_JSON = "data/coco/train.json"
+SPLITS = [
+    ("data/yolo/labels/train", "data/yolo/images/train", "data/coco/train.json"),
+    ("data/yolo/labels/val",   "data/yolo/images/val",   "data/coco/val.json"),
+]
 
 
 def yolo_to_coco_bbox(x, y, width, height, image_width, image_height):
@@ -12,90 +13,93 @@ def yolo_to_coco_bbox(x, y, width, height, image_width, image_height):
     y_min = (y - height / 2) * image_height
     box_width = width * image_width
     box_height = height * image_height
-    return [x_min, y_min, box_width, box_height]  # FIXED
+    return [x_min, y_min, box_width, box_height]
 
 
 def main():
     print("Convert YOLO → COCO format...")
 
-    images = []
-    annotations = []
+    os.makedirs("data/coco", exist_ok=True)
 
     categories = [
         {"id": 1, "name": "arabica"},
         {"id": 2, "name": "canephora"}
     ]
 
-    annotation_id = 0
-    image_id = 0
+    for label_dir, image_dir, output_json in SPLITS:
 
-    for file in os.listdir(YOLO_LABEL_DIR):
-        if not file.endswith(".txt"):
-            continue
+        images = []
+        annotations = []
+        annotation_id = 0
+        image_id = 0
 
-        image_name = file.replace(".txt", ".jpg")
-        image_path = os.path.join(IMAGE_DIR, image_name)
+        for file in os.listdir(label_dir):
+            if not file.endswith(".txt"):
+                continue
 
-        if not os.path.exists(image_path):
-            continue
+            image_name = file.replace(".txt", ".jpg")
+            image_path = os.path.join(image_dir, image_name)
 
-        image = cv2.imread(image_path)
+            if not os.path.exists(image_path):
+                continue
 
-        if image is None:  # FIXED
-            print("Skipping broken image:", image_path)
-            continue
+            image = cv2.imread(image_path)
 
-        height, width = image.shape[:2]
+            if image is None:
+                print("Skipping broken image:", image_path)
+                continue
 
-        images.append({
-            "id": image_id,
-            "file_name": image_name,
-            "width": width,
-            "height": height
-        })
+            height, width = image.shape[:2]
 
-        with open(os.path.join(YOLO_LABEL_DIR, file), "r") as f:
-            for line in f.readlines():
-                parts = line.strip().split()
+            images.append({
+                "id": image_id,
+                "file_name": image_name,
+                "width": width,
+                "height": height
+            })
 
-                # allow empty label (negative sample)
-                if len(parts) == 0:
-                    continue
+            with open(os.path.join(label_dir, file), "r") as f:
+                for line in f.readlines():
+                    parts = line.strip().split()
 
-                if len(parts) != 5:
-                    continue
+                    # allow empty label (negative sample)
+                    if len(parts) == 0:
+                        continue
 
-                cls, x, y, bw, bh = map(float, parts)
+                    if len(parts) != 5:
+                        continue
 
-                bbox = yolo_to_coco_bbox(x, y, bw, bh, width, height)
+                    cls, x, y, bw, bh = map(float, parts)
 
-                annotations.append({
-                    "id": annotation_id,
-                    "image_id": image_id,
-                    "category_id": int(cls) + 1,  # FIXED
-                    "bbox": bbox,
-                    "area": bbox[2] * bbox[3],
-                    "iscrowd": 0
-                })
+                    bbox = yolo_to_coco_bbox(x, y, bw, bh, width, height)
 
-                annotation_id += 1
+                    annotations.append({
+                        "id": annotation_id,
+                        "image_id": image_id,
+                        "category_id": int(cls) + 1,
+                        "bbox": bbox,
+                        "area": bbox[2] * bbox[3],
+                        "iscrowd": 0
+                    })
 
-        image_id += 1
+                    annotation_id += 1
 
-    coco = {
-        "images": images,
-        "annotations": annotations,
-        "categories": categories
-    }
+            image_id += 1
 
-    os.makedirs("data/coco", exist_ok=True)
+        coco = {
+            "images": images,
+            "annotations": annotations,
+            "categories": categories
+        }
 
-    with open(OUTPUT_JSON, "w") as f:
-        json.dump(coco, f)
+        with open(output_json, "w") as f:
+            json.dump(coco, f)
 
-    print("COCO dataset created successfully")
-    print("Images:", len(images))
-    print("Annotations:", len(annotations))
+        print(f"\n{output_json}")
+        print(f"  Images:      {len(images)}")
+        print(f"  Annotations: {len(annotations)}")
+
+    print("\nCOCO dataset created successfully")
 
 
 if __name__ == "__main__":

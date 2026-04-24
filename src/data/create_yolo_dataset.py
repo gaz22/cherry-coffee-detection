@@ -19,10 +19,12 @@ CLASS_MAP = {
 
 # create yolo train/val folder structure
 def create_dir():
+    if os.path.exists(YOLO_DIR):
+        shutil.rmtree(YOLO_DIR)
+
     for split in ["train", "val"]:
         os.makedirs(os.path.join(IMAGE_DIR, split), exist_ok=True)
         os.makedirs(os.path.join(LABEL_DIR, split), exist_ok=True)
-
 def create_label_file(label_path, class_id=None):
     with open(label_path, "w") as f:
         if class_id is not None:
@@ -40,7 +42,8 @@ def main():
         df,
         test_size = 1 - TRAIN_RATION,
         random_state = 42,
-        shuffle = True
+        shuffle = True,
+        stratify=df["dataset_type"]
     )
 
     create_dir()
