@@ -7,7 +7,7 @@ from src.utils.config import BATCH_SIZE
 
 IMG_SIZE = 416
 NUM_CLASSES = 2
-OUTPUT_PATH = "outputs/retinanet/retinanet.weights.h5"
+OUTPUT_PATH = "outputs/retinanet.weights.h5"
 
 SMOKE = False
 
