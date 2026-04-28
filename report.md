@@ -154,7 +154,42 @@ YOLOv8n significantly outperformed RetinaNet under equivalent dataset conditions
 
 ---
 
-## 11. Limitations
+## 11. Explainable AI — Grad-CAM Analysis
+
+Grad-CAM was applied to both models to visualise which image regions drove predictions.
+
+- **RetinaNet** target layer: `v2_stack_3_block3_out`
+- **YOLOv8** target layer: C2f block, layer 9
+
+### 11.1 RetinaNet
+- Activations concentrated in **upper background regions** (sky, lighting)
+- Both arabica and canephora heatmaps activated on **identical regions**
+- Plant features (leaves, flowers, cherries) received near-zero activation
+- Consistent with class collapse — model learned background cues, not plant morphology
+
+See: `outputs/gradcam/retinanet_gradcam_summary.png`
+
+### 11.2 YOLOv8
+- Activations distributed across **biologically relevant plant structures**
+- Arabica images: leaf surfaces, branch patterns, cherry clusters
+- Canephora images: globular white flower clusters, jasmine-like flowers
+- Arabica and canephora heatmaps activated on **different regions** — confirming distinct feature learning per species
+
+See: `outputs/gradcam/yolo_gradcam_summary.png`
+
+### 11.3 Comparison
+
+| | RetinaNet | YOLOv8 |
+|---|---|---|
+| Activation pattern | Background / sky | Plant structures |
+| Class differentiation | ❌ Identical heatmaps | ✅ Different regions per class |
+| Biological validity | ❌ None | ✅ Flowers, cherries, leaves |
+
+YOLOv8 learned plant-relevant features; RetinaNet learned background context — directly explaining the performance gap.
+
+---
+
+## 12. Limitations
 
 - Bounding boxes are full-image auto-annotations. mAP reflects species 
   classification accuracy rather than object localisation precision. 
@@ -163,12 +198,15 @@ YOLOv8n significantly outperformed RetinaNet under equivalent dataset conditions
   (duplicate URLs due to replace=True sampling on a small source pool 
   of 117 observations).
 - Dataset size is relatively small (660 images total).
-- RetinaNet evaluation is limited to image-level classification, while box-level mAP was not computed given full-image annotation constraints.
+- RetinaNet evaluation is limited to image-level classification — box-level mAP was not computed given full-image annotation constraints.
+- Grad-CAM heatmaps reflect backbone feature activations rather than detection head outputs — interpretation should account for this architectural distinction.
 
 ---
 
-## 12. Conclusion
+## 13. Conclusion
 
-YOLOv8n achieved strong balanced performance (mAP@50=0.888, arabica: 0.875, canephora: 0.897) with fast inference (~35ms/image CPU), demonstrating that species-level coffee plant detection is feasible using auto-annotated iNaturalist data. RetinaNet exhibited persistent class bias under all configurations — alpha=0.50 caused complete collapse, while alpha=0.75 achieved only 52% accuracy with poor arabica recall (0.10). These results confirm YOLOv8n as the more appropriate architecture for small datasets with full-image annotations, while RetinaNet's strengths would be better realised with tighter per-object bounding box annotations.
+YOLOv8n achieved strong balanced performance (mAP@50=0.888, arabica: 0.875, canephora: 0.897) with fast inference (~35ms/image CPU), demonstrating that species-level coffee plant detection is feasible using auto-annotated iNaturalist data. RetinaNet exhibited persistent class bias under all configurations — alpha=0.50 caused complete collapse, while alpha=0.75 achieved only 52% accuracy with poor arabica recall (0.10).
+
+Grad-CAM analysis confirmed that YOLOv8 learned biologically meaningful features — flower morphology, cherry clusters, leaf structure — while RetinaNet attended solely to background context, explaining its failure to distinguish species. These results confirm YOLOv8n as the more appropriate architecture for small datasets with full-image annotations, while RetinaNet's strengths would be better realised with tighter per-object bounding box annotations.
 
 ---
