@@ -1,8 +1,14 @@
-tensorflow
+tensorflow==2.16.2
 keras
-keras-cv
+keras-cv==0.9.0
 opencv-python
 matplotlib
 pandas
 numpy
 scikit-learn
+ultralytics
+torch
+torchvision
+requests
+Pillow
+h5py

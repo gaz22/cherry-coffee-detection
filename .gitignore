@@ -3,6 +3,8 @@ data/raw/
 data/processed
 data/yolo/images
 data/yolo/labels
+data/raw/*.zip
+data/raw/*.csv
 
 # python
 __pycache__/
@@ -22,3 +24,12 @@ runs/
 
 # retinanet training output
 data/retinanet/*
+reports/retinanet/
+
+# outputs
+outputs/*.h5
+
+# pthon
+__pycache__/
+*.pyc
+.DS_Store
