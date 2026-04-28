@@ -67,14 +67,22 @@ Overall, the model shows good performance for a baseline detector.
 
 ---
 
-## 5. YOLOv8n — Class-wise Performance
+## 5. YOLOv8n — Validation Evaluation
 
-| Class            | mAP@50 |
-|------------------|--------|
-| Coffea arabica   | 0.875  |
-| Coffea canephora | 0.897  |
+| Metric | Arabica | Canephora |
+|--------|---------|-----------|
+| Precision | 0.92 | 0.83 |
+| Recall | 0.82 | 0.93 |
+| F1 | 0.87 | 0.88 |
+| **Accuracy** | | **0.87** |
 
-The results show balanced learning across both classes with no significant bias.
+**Confusion matrix:**
+```
+              Predicted
+              Arabica  Canephora
+True Arabica  [ 49       11 ]
+True Canephora[  4       55 ]
+```
 
 ---
 
@@ -143,12 +151,12 @@ The average prediction confidence was similar across true classes (arabica image
 
 | Metric | YOLOv8n | RetinaNet (α=0.75) |
 |--------|---------|---------------------|
-| Arabica Recall | — | 0.10 |
-| Canephora Recall | — | 0.95 |
-| mAP@50 / Accuracy | 0.888 | 0.52 |
-| Inference speed (CPU) | ~35ms | ~4s |
+| Arabica Recall | 0.82 | 0.10 |
+| Canephora Recall | 0.93 | 0.95 |
+| Accuracy | 0.87 | 0.52 |
+| mAP@50 | 0.888 | — |
+| Inference (CPU) | ~35ms | ~4s |
 | Class balance | ✅ Balanced | ❌ Canephora bias |
-| Training stability | ✅ Stable | ⚠️ Phase 2 unstable |
 
 YOLOv8n significantly outperformed RetinaNet under equivalent dataset conditions. YOLOv8's anchor-free design tolerates full-image annotations more gracefully, while RetinaNet's anchor-based mechanism requires precise per-object bounding boxes to function as designed.
 
