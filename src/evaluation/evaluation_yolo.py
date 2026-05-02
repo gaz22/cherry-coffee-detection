@@ -9,17 +9,17 @@ from sklearn.metrics import (
 )
 from ultralytics import YOLO
 
-COCO_JSON    = "data/coco/val.json"
-IMAGE_DIR    = "data/yolo/images/val"
-YOLO_WEIGHTS = "runs/detect/train-3/weights/best.pt"
+COCO_JSON    = "data/coco/test.json"
+IMAGE_DIR    = "data/yolo/images/test"
+YOLO_WEIGHTS = "runs/detect/train-5/weights/best.pt"
 OUTPUT_DIR   = "outputs"
 
 CONFIDENCE_THRESHOLD = 0.25
 CLASS_NAMES = ["arabica", "canephora"]
 
 
-def load_val_data():
-    print("Loading val dataset...")
+def load_test_data():
+    print("Loading test dataset...")
 
     with open(COCO_JSON) as f:
         coco = json.load(f)
@@ -47,13 +47,13 @@ def load_val_data():
         else:
             canephora_count += 1
 
-    print(f"Loaded: {len(dataset)} samples")
+    print(f"Loaded: {len(dataset)} test samples")
     print(f"Arabica: {arabica_count} | Canephora: {canephora_count}")
     return dataset
 
 
 def evaluate(model, dataset):
-    print(f"\nRunning evaluation (threshold: {CONFIDENCE_THRESHOLD})...")
+    print(f"\n Running test evaluation (threshold: {CONFIDENCE_THRESHOLD})...")
 
     y_true, y_pred, y_conf = [], [], []
 
@@ -86,7 +86,7 @@ def evaluate(model, dataset):
 
 
 def report(y_true, y_pred):
-    print("\n=== CLASSIFICATION REPORT ===")
+    print("\n=== TEST SET CLASSIFICATION REPORT ===")
     print(classification_report(
         y_true, y_pred,
         target_names=CLASS_NAMES,
@@ -96,7 +96,7 @@ def report(y_true, y_pred):
 
 def plot_confusion(y_true, y_pred):
     cm = confusion_matrix(y_true, y_pred)
-    print("\n=== CONFUSION MATRIX ===")
+    print("\n=== TEST SET CONFUSION MATRIX ===")
     print(cm)
 
     fig, ax = plt.subplots(figsize=(6, 5))
@@ -104,56 +104,37 @@ def plot_confusion(y_true, y_pred):
         confusion_matrix=cm,
         display_labels=CLASS_NAMES
     ).plot(cmap="Blues", ax=ax)
-    plt.title("YOLOv8n — Confusion Matrix")
+    plt.title("YOLOv8n — Test Set Confusion Matrix")
     plt.tight_layout()
-    path = os.path.join(OUTPUT_DIR, "confusion_matrix_yolo.png")
-    plt.savefig(path, dpi=150)
-    plt.show()
-    print(f"Saved: {path}")
-
-
-def plot_confidence_distribution(y_true, y_pred, y_conf):
-    correct   = y_conf[y_true == y_pred]
-    incorrect = y_conf[y_true != y_pred]
-
-    plt.figure(figsize=(8, 4))
-    plt.hist(correct,   bins=20, alpha=0.6, color="green", label="Correct")
-    plt.hist(incorrect, bins=20, alpha=0.6, color="red",   label="Wrong")
-    plt.axvline(
-        CONFIDENCE_THRESHOLD, color="black", linestyle="--",
-        label=f"Threshold ({CONFIDENCE_THRESHOLD})"
-    )
-    plt.xlabel("Confidence Score")
-    plt.ylabel("Count")
-    plt.title("YOLOv8n — Prediction Confidence Distribution")
-    plt.legend()
-    plt.tight_layout()
-    path = os.path.join(OUTPUT_DIR, "confidence_distribution_yolo.png")
+    path = os.path.join(OUTPUT_DIR, "confusion_matrix_yolo_test.png")
     plt.savefig(path, dpi=150)
     plt.show()
     print(f"Saved: {path}")
 
 
 def main():
-    print("Starting YOLOv8 Evaluation...")
+    print("YOLOv8 Test Set Evaluation...")
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     if not os.path.exists(YOLO_WEIGHTS):
         print(f" Weights not found: {YOLO_WEIGHTS}")
-        print("   Check runs/detect/ for your latest training folder.")
         return
 
-    dataset = load_val_data()
+    dataset = load_test_data()
     model   = YOLO(YOLO_WEIGHTS)
 
     y_true, y_pred, y_conf = evaluate(model, dataset)
 
     report(y_true, y_pred)
     plot_confusion(y_true, y_pred)
-    plot_confidence_distribution(y_true, y_pred, y_conf)
 
-    print("\n YOLOv8 evaluation complete.")
-    print(f"   Outputs saved to: {OUTPUT_DIR}/")
+    # Summary
+    accuracy = (y_true == y_pred).mean()
+    print(f"\n=== SUMMARY ===")
+    print(f"Test accuracy: {accuracy:.1%}")
+    print(f"Test samples:  {len(y_true)}")
+    print("\n Test evaluation complete.")
+    print(f"   Saved: {OUTPUT_DIR}/confusion_matrix_yolo_test.png")
 
 
 if __name__ == "__main__":

@@ -5,6 +5,7 @@ import cv2
 SPLITS = [
     ("data/yolo/labels/train", "data/yolo/images/train", "data/coco/train.json"),
     ("data/yolo/labels/val",   "data/yolo/images/val",   "data/coco/val.json"),
+    ("data/yolo/labels/test",  "data/yolo/images/test",  "data/coco/test.json"),
 ]
 
 
@@ -27,7 +28,6 @@ def main():
     ]
 
     for label_dir, image_dir, output_json in SPLITS:
-
         images = []
         annotations = []
         annotation_id = 0
@@ -44,7 +44,6 @@ def main():
                 continue
 
             image = cv2.imread(image_path)
-
             if image is None:
                 print("Skipping broken image:", image_path)
                 continue
@@ -61,16 +60,10 @@ def main():
             with open(os.path.join(label_dir, file), "r") as f:
                 for line in f.readlines():
                     parts = line.strip().split()
-
-                    # allow empty label (negative sample)
-                    if len(parts) == 0:
-                        continue
-
-                    if len(parts) != 5:
+                    if len(parts) == 0 or len(parts) != 5:
                         continue
 
                     cls, x, y, bw, bh = map(float, parts)
-
                     bbox = yolo_to_coco_bbox(x, y, bw, bh, width, height)
 
                     annotations.append({
@@ -81,25 +74,22 @@ def main():
                         "area": bbox[2] * bbox[3],
                         "iscrowd": 0
                     })
-
                     annotation_id += 1
 
             image_id += 1
 
-        coco = {
-            "images": images,
-            "annotations": annotations,
-            "categories": categories
-        }
-
         with open(output_json, "w") as f:
-            json.dump(coco, f)
+            json.dump({
+                "images":      images,
+                "annotations": annotations,
+                "categories":  categories
+            }, f)
 
         print(f"\n{output_json}")
         print(f"  Images:      {len(images)}")
         print(f"  Annotations: {len(annotations)}")
 
-    print("\nCOCO dataset created successfully")
+    print("\n COCO conversion complete")
 
 
 if __name__ == "__main__":
