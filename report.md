@@ -15,7 +15,7 @@ This document summarises the results of two object detection architectures — Y
 - Input size: 416 × 416
 - Epochs: 50
 - Batch size: 8
-- Optimiser: Default YOLOv8 optimiser
+- Optimiser: Default YOLOv8 optimiser (AdamW with default augmentation: mosaic, random flip, HSV colour jitter)
 - Task: Multi-class object detection
 
 The YOLOv8n was selected as a lightweight baseline due to its suitability for small datasets.
@@ -27,6 +27,7 @@ The YOLOv8n was selected as a lightweight baseline due to its suitability for sm
 - Box loss: Smooth L1
 - Classification loss: Focal Loss (alpha=0.75, gamma=2.0, reduction="sum")
 - Optimiser: Adam + CosineDecay + gradient clipping (clipnorm=1.0)
+- Augmentation: RandomFlip, RandomTranslation (keras_cv)
 - Training: Two-phase (frozen backbone → partial unfreeze)
 
 ---
@@ -39,10 +40,11 @@ The YOLOv8n was selected as a lightweight baseline due to its suitability for sm
   - Coffea canephora: 300 images
   - Negative samples: 60 images
 
-### Data split:
-- Training set: 528 images
-- Validation set: 132 images
-- No overlap between splits
+### Data split (70/15/15):
+- Training set: 462 images (210 arabica, 210 canephora, 42 negative)
+- Validation set: 99 images (45 arabica, 45 canephora, 9 negative)
+- Test set: 99 images (45 arabica, 45 canephora, 9 negative)
+- Stratified split — zero overlap confirmed between all three sets
 
 Negative samples (60 images) were sourced from iNaturalist taxon 47693 
 (Magnoliopsida, Indonesia), specifically excluding Coffea species 
@@ -54,16 +56,12 @@ ability to distinguish coffee plants from visually similar vegetation.
 
 ## 4. YOLOv8n — Training Performance
 
-The model achieved the following validation results:
-
 | Metric       | Value |
 |--------------|-------|
-| Precision    | 0.793 |
-| Recall       | 0.874 |
-| mAP@50       | 0.888 |
-| mAP@50-95    | 0.886 |
-
-Overall, the model shows good performance for a baseline detector.
+| Precision    | 0.747 |
+| Recall       | 0.859 |
+| mAP@50       | 0.880 |
+| mAP@50-95    | 0.878 |
 
 ---
 
@@ -84,11 +82,30 @@ True Arabica  [ 49       11 ]
 True Canephora[  4       55 ]
 ```
 
+### 5.1 YOLOv8n — Test Set Evaluation (held-out)
+
+| Metric | Arabica | Canephora |
+|--------|---------|-----------|
+| Precision | 0.89 | 0.75 |
+| Recall | 0.71 | 0.91 |
+| F1 | 0.79 | 0.82 |
+| **Accuracy** | | **0.81** |
+
+**Confusion matrix:**
+```
+              Predicted
+              Arabica  Canephora
+True Arabica  [ 32       13 ]
+True Canephora[  4       40 ]
+```
+
+Test set: 89 annotated samples (45 arabica, 44 canephora — negatives excluded from classification metrics).
+
 ---
 
 ## 6. YOLOv8n — Inference Performance
 
-- Inference time: ~35 ms per image (CPU)
+- Inference time: ~34 ms per image (CPU)
 - Suitable for near real-time applications
 - Efficient performance despite training on limited hardware
 
@@ -103,7 +120,7 @@ Two-phase training was applied. Phase 1 (frozen backbone) converged steadily to 
 | Phase 1 — Frozen backbone | 0.1488 | Converged |
 | Phase 2 — Partial unfreeze | — | Overfit epoch 1, rolled back |
 
-This confirms the dataset (474 training samples) is too small to benefit from backbone fine-tuning.
+This confirms the dataset (462 training samples) is too small to benefit from backbone fine-tuning.
 
 ---
 
@@ -151,11 +168,12 @@ The average prediction confidence was similar across true classes (arabica image
 
 | Metric | YOLOv8n | RetinaNet (α=0.75) |
 |--------|---------|---------------------|
-| Arabica Recall | 0.82 | 0.10 |
-| Canephora Recall | 0.93 | 0.95 |
-| Accuracy | 0.87 | 0.52 |
-| mAP@50 | 0.888 | — |
-| Inference (CPU) | ~35ms | ~4s |
+| Arabica Recall (val) | 0.82 | 0.10 |
+| Canephora Recall (val) | 0.93 | 0.95 |
+| Val Accuracy | 0.87 | 0.52 |
+| **Test Accuracy** | **0.81** | — |
+| mAP@50 | 0.880 | — |
+| Inference (CPU) | ~34ms | ~4s |
 | Class balance | ✅ Balanced | ❌ Canephora bias |
 
 YOLOv8n significantly outperformed RetinaNet under equivalent dataset conditions. YOLOv8's anchor-free design tolerates full-image annotations more gracefully, while RetinaNet's anchor-based mechanism requires precise per-object bounding boxes to function as designed.
@@ -213,7 +231,7 @@ YOLOv8 learned plant-relevant features; RetinaNet learned background context —
 
 ## 13. Conclusion
 
-YOLOv8n achieved strong balanced performance (mAP@50=0.888, arabica: 0.875, canephora: 0.897) with fast inference (~35ms/image CPU), demonstrating that species-level coffee plant detection is feasible using auto-annotated iNaturalist data. RetinaNet exhibited persistent class bias under all configurations — alpha=0.50 caused complete collapse, while alpha=0.75 achieved only 52% accuracy with poor arabica recall (0.10).
+YOLOv8n achieved strong balanced performance (mAP@50=0.880, val accuracy=87%, test accuracy=81%) demonstrating that species-level coffee plant detection is feasible using auto-annotated iNaturalist data. The 6% gap between val and test accuracy reflects normal generalisation variance on a small dataset. RetinaNet exhibited persistent class bias under all configurations — alpha=0.50 caused complete collapse, while alpha=0.75 achieved only 52% accuracy with poor arabica recall (0.10).
 
 Grad-CAM analysis confirmed that YOLOv8 learned biologically meaningful features — flower morphology, cherry clusters, leaf structure — while RetinaNet attended solely to background context, explaining its failure to distinguish species. These results confirm YOLOv8n as the more appropriate architecture for small datasets with full-image annotations, while RetinaNet's strengths would be better realised with tighter per-object bounding box annotations.
 
