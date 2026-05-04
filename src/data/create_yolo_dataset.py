@@ -21,12 +21,33 @@ CLASS_MAP = {
 
 # create yolo train/val folder structure
 def create_dir():
-    if os.path.exists(YOLO_DIR):
-        shutil.rmtree(YOLO_DIR)
-
+    # Clean old images and labels but preserve dataset.yaml
     for split in ["train", "val", "test"]:
-        os.makedirs(os.path.join(IMAGE_DIR, split), exist_ok=True)
-        os.makedirs(os.path.join(LABEL_DIR, split), exist_ok=True)
+        img_dir = os.path.join(IMAGE_DIR, split)
+        lbl_dir = os.path.join(LABEL_DIR, split)
+        if os.path.exists(img_dir):
+            shutil.rmtree(img_dir)
+        if os.path.exists(lbl_dir):
+            shutil.rmtree(lbl_dir)
+        os.makedirs(img_dir, exist_ok=True)
+        os.makedirs(lbl_dir, exist_ok=True)
+
+    # Only create dataset.yaml if it doesn't already exist
+    yaml_path = os.path.join(YOLO_DIR, "dataset.yaml")
+    if not os.path.exists(yaml_path):
+        with open(yaml_path, "w") as f:
+            f.write("path: data/yolo\n")
+            f.write("train: images/train\n")
+            f.write("val: images/val\n")
+            f.write("test: images/test\n")
+            f.write("nc: 2\n")
+            f.write("names:\n")
+            f.write("  0: arabica\n")
+            f.write("  1: canephora\n")
+        print("Created: data/yolo/dataset.yaml")
+    else:
+        print("Preserved: data/yolo/dataset.yaml (already exists)")
+
 def create_label_file(label_path, class_id=None):
     with open(label_path, "w") as f:
         if class_id is not None:

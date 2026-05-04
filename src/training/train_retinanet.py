@@ -7,7 +7,7 @@ from src.utils.config import BATCH_SIZE
 
 IMG_SIZE = 416
 NUM_CLASSES = 2
-OUTPUT_PATH = "outputs/retinanet.weights.h5"
+OUTPUT_PATH = "data/retinanet/retinanet.weights.h5"
 
 SMOKE = False
 
@@ -48,7 +48,7 @@ def build_model():
 
     return model, backbone
 
-
+os.makedirs("data/retinanet", exist_ok=True)
 def main():
     print("Training RetinaNet...")
 
@@ -68,7 +68,7 @@ def main():
 
     callbacks = [
         tf.keras.callbacks.ModelCheckpoint(
-            "outputs/retinanet/retinanet_best.weights.h5",
+            "data/retinanet/retinanet_best.weights.h5",
             save_weights_only=True,
             save_best_only=True,
             monitor="val_loss",

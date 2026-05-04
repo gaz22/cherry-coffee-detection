@@ -11,7 +11,7 @@ from ultralytics import YOLO
 
 COCO_JSON    = "data/coco/test.json"
 IMAGE_DIR    = "data/yolo/images/test"
-YOLO_WEIGHTS = "runs/detect/train-5/weights/best.pt"
+YOLO_WEIGHTS = "runs/detect/coffee/weights/best.pt"
 OUTPUT_DIR   = "outputs"
 
 CONFIDENCE_THRESHOLD = 0.25

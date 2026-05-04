@@ -8,7 +8,7 @@ from sklearn.metrics import confusion_matrix, classification_report, ConfusionMa
 
 COCO_JSON  = "data/coco/val.json"
 IMAGE_DIR  = "data/yolo/images/val"
-MODEL_PATH = "outputs/retinanet_best.weights.h5"
+MODEL_PATH = "data/retinanet/retinanet_best.weights.h5"
 
 CONFIDENCE_THRESHOLD = 0.15
 IMG_SIZE = 416

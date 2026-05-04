@@ -15,7 +15,7 @@ IMG_SIZE   = 416
 CLASS_NAMES = ["arabica", "canephora"]
 
 # latest YOLO run weights
-YOLO_WEIGHTS = "runs/detect/train-3/weights/best.pt"
+YOLO_WEIGHTS = "runs/detect/coffee/weights/best.pt"
 
 # load val samples
 def load_samples():

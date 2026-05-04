@@ -8,7 +8,7 @@ import json
 
 COCO_JSON  = "data/coco/val.json"
 IMAGE_DIR  = "data/yolo/images/val"
-MODEL_PATH = "data/retinanet/retinanet_best.weights.h5"
+MODEL_PATH = "outputs/retinanet_best.weights.h5"
 OUTPUT_DIR = "outputs/gradcam"
 IMG_SIZE   = 416
 

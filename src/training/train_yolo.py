@@ -14,7 +14,9 @@ def main():
             data="data/yolo/dataset.yaml",
             epochs=50,
             imgsz=416,
-            batch=8
+            batch=8,
+            name="coffee",
+            exist_ok=True 
         )
         print("Training completed")
         print(results)
