@@ -128,22 +128,22 @@ This confirms the dataset (462 training samples) is too small to benefit from ba
 
 | Metric | Arabica | Canephora |
 |--------|---------|-----------|
-| Precision | 0.67 | 0.51 |
-| Recall | 0.10 | 0.95 |
-| F1-score | 0.17 | 0.66 |
-| **Accuracy** | | **0.52** |
+| Precision | 0.49 | 0.00 |
+| Recall | 0.98 | 0.00 |
+| F1-score | 0.66 | 0.00 |
+| **Accuracy** | | **0.49** |
 
 **Confusion matrix:**
 ```
               Predicted
               Arabica  Canephora
-True Arabica  [  6        54  ]
-True Canephora[  3        56  ]
+True Arabica  [  44        1  ]
+True Canephora[  45        0  ]
 ```
 
-A prior training run with alpha=0.50 (equal class weight) resulted in complete class collapse — the model predicted canephora for all 119 images (arabica recall=0.00, accuracy=0.50). Increasing alpha to 0.75 to upweight arabica partially recovered predictions, introducing 9 arabica predictions (prediction distribution: {arabica: 9, canephora: 110}). However, canephora bias remained dominant with arabica recall at only 0.10.
+Training with alpha=0.50 caused complete class collapse — canephora predicted for all images (accuracy=0.50). Increasing to alpha=0.75 partially recovered arabica predictions (9/119, recall=0.10), but bias remained dominant. A subsequent run with identical configuration collapsed in the opposite direction — predicting arabica for 89/90 images — confirming RetinaNet is unstable across runs and not learning genuine discriminative features.
 
-The average prediction confidence was similar across true classes (arabica images: 0.625, canephora images: 0.627), suggesting the model assigns nearly identical scores to both species — consistent with the high visual similarity between *Coffea arabica* and *Coffea canephora* in whole-plant images.
+The similar prediction confidence across both classes (arabica: 0.625, canephora: 0.627) confirms the model cannot distinguish the two species, consistent with the high visual similarity between *Coffea arabica* and *Coffea canephora* in whole-plant images.
 
 ---
 
@@ -170,7 +170,7 @@ The average prediction confidence was similar across true classes (arabica image
 |--------|---------|---------------------|
 | Arabica Recall (val) | 0.82 | 0.10 |
 | Canephora Recall (val) | 0.93 | 0.95 |
-| Val Accuracy | 0.87 | 0.52 |
+| Val Accuracy | 0.87 | ~0.49-0.52 (Unstable) |
 | **Test Accuracy** | **0.81** | — |
 | mAP@50 | 0.880 | — |
 | Inference (CPU) | ~34ms | ~4s |
@@ -231,7 +231,7 @@ YOLOv8 learned plant-relevant features; RetinaNet learned background context —
 
 ## 13. Conclusion
 
-YOLOv8n achieved strong balanced performance (mAP@50=0.880, val accuracy=87%, test accuracy=81%) demonstrating that species-level coffee plant detection is feasible using auto-annotated iNaturalist data. The 6% gap between val and test accuracy reflects normal generalisation variance on a small dataset. RetinaNet exhibited persistent class bias under all configurations — alpha=0.50 caused complete collapse, while alpha=0.75 achieved only 52% accuracy with poor arabica recall (0.10).
+YOLOv8n achieved strong balanced performance (mAP@50=0.880, val accuracy=87%, test accuracy=81%) demonstrating that species-level coffee plant detection is feasible using auto-annotated iNaturalist data. The 6% gap between val and test accuracy reflects normal generalisation variance on a small dataset. RetinaNet exhibited persistent class bias under all configurations — alpha=0.50 caused complete collapse, while alpha=0.75 achieved only (~49%-52%) accuracy with poor arabica recall (0.10).
 
 Grad-CAM analysis confirmed that YOLOv8 learned biologically meaningful features — flower morphology, cherry clusters, leaf structure — while RetinaNet attended solely to background context, explaining its failure to distinguish species. These results confirm YOLOv8n as the more appropriate architecture for small datasets with full-image annotations, while RetinaNet's strengths would be better realised with tighter per-object bounding box annotations.
 
