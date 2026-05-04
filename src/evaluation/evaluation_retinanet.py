@@ -9,6 +9,7 @@ from sklearn.metrics import confusion_matrix, classification_report, ConfusionMa
 COCO_JSON  = "data/coco/val.json"
 IMAGE_DIR  = "data/yolo/images/val"
 MODEL_PATH = "data/retinanet/retinanet_best.weights.h5"
+OUTPUT_DIR = "outputs"
 
 CONFIDENCE_THRESHOLD = 0.15
 IMG_SIZE = 416
@@ -125,7 +126,6 @@ def evaluate(model, dataset):
         true_classes = item["classes"]
         true_label   = 1 if 1 in true_classes else 0
 
-        # use highest confidence prediction
         if len(pred_scores_filtered) > 0:
             best_idx   = np.argmax(pred_scores_filtered)
             pred_label = int(pred_classes_filtered[best_idx])
@@ -171,9 +171,10 @@ def plot_confusion(y_true, y_pred):
     ).plot(cmap="Blues", ax=ax)
     plt.title("RetinaNet — Confusion Matrix")
     plt.tight_layout()
-    plt.savefig("outputs/retinanet/confusion_matrix_retinanet.png", dpi=150)
+    path = os.path.join(OUTPUT_DIR, "confusion_matrix_retinanet.png")
+    plt.savefig(path, dpi=150)
     plt.show()
-    print("Saved: outputs/retinanet/confusion_matrix_retinanet.png")
+    print(f"Saved: {path}")
 
 
 def plot_score_distribution(model, dataset):
@@ -204,19 +205,94 @@ def plot_score_distribution(model, dataset):
     plt.title("RetinaNet — Score Distribution by True Class")
     plt.legend()
     plt.tight_layout()
-    plt.savefig("outputs/retinanet/retinanet/score_distribution_retinanet.png", dpi=150)
+    path = os.path.join(OUTPUT_DIR, "score_distribution_retinanet.png")
+    plt.savefig(path, dpi=150)
     plt.show()
-    print("Saved: outputs/retinanet/score_distribution_retinanet.png")
+    print(f"Saved: {path}")
+
+
+def threshold_search(model, dataset):
+    print("\n=== THRESHOLD SEARCH ===")
+
+    thresholds = [0.05, 0.30]
+    results    = {}
+
+    for t in thresholds:
+        yt, yp = [], []
+
+        for item in dataset:
+            image = preprocess_image(item["image_path"])
+            ds    = preprocess_to_dataset(image)
+            preds = model.predict(ds, verbose=0)
+
+            pred_classes = preds["classes"][0]
+            pred_scores  = preds["confidence"][0]
+
+            mask = pred_scores > t
+            pf   = pred_classes[mask]
+            sf   = pred_scores[mask]
+
+            tl = 1 if 1 in item["classes"] else 0
+            pl = int(pf[np.argmax(sf)]) if len(sf) > 0 else 0
+
+            yt.append(tl)
+            yp.append(pl)
+
+        yt  = np.array(yt)
+        yp  = np.array(yp)
+        acc = (yt == yp).mean()
+        r   = classification_report(
+            yt, yp,
+            target_names=["arabica", "canephora"],
+            zero_division=0,
+            output_dict=True
+        )
+        pred_dist = dict(zip(*np.unique(yp, return_counts=True)))
+
+        results[t] = {
+            "accuracy":          acc,
+            "arabica_recall":    r["arabica"]["recall"],
+            "canephora_recall":  r["canephora"]["recall"],
+            "pred_dist":         pred_dist,
+        }
+
+    # Print summary table
+    print(f"\n{'Threshold':<12} {'Accuracy':<12} {'Arabica R':<12} {'Canephora R':<14} {'Pred Dist'}")
+    print("-"*65)
+    for t in thresholds:
+        r = results[t]
+        print(f"{t:<12} {r['accuracy']:<12.2f} {r['arabica_recall']:<12.2f} "
+              f"{r['canephora_recall']:<14.2f} {r['pred_dist']}")
+
+    # Plot
+    accs    = [results[t]["accuracy"]        for t in thresholds]
+    ar_rec  = [results[t]["arabica_recall"]  for t in thresholds]
+    can_rec = [results[t]["canephora_recall"] for t in thresholds]
+
+    plt.figure(figsize=(10, 5))
+    plt.plot(thresholds, accs,    marker="o", label="Accuracy",         color="blue")
+    plt.plot(thresholds, ar_rec,  marker="s", label="Arabica Recall",   color="green")
+    plt.plot(thresholds, can_rec, marker="^", label="Canephora Recall", color="red")
+    plt.xlabel("Confidence Threshold")
+    plt.ylabel("Score")
+    plt.title("RetinaNet — Performance vs Confidence Threshold")
+    plt.legend()
+    plt.grid(True, alpha=0.3)
+    plt.xticks(thresholds)
+    plt.tight_layout()
+    path = os.path.join(OUTPUT_DIR, "retinanet_threshold_comparison.png")
+    plt.savefig(path, dpi=150)
+    plt.show()
+    print(f"\nSaved: {path}")
 
 
 def main():
     print("Starting RetinaNet Evaluation...")
-    os.makedirs("outputs", exist_ok=True)
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     dataset = load_coco()
     model   = load_model()
 
-    # debug: shows what model is actually predicting
     debug_predictions(model, dataset)
 
     y_true, y_pred = evaluate(model, dataset)
@@ -224,6 +300,9 @@ def main():
     report(y_true, y_pred)
     plot_confusion(y_true, y_pred)
     plot_score_distribution(model, dataset)
+
+    # Run threshold search
+    threshold_search(model, dataset)
 
     print("\n Evaluation complete.")
 

@@ -145,6 +145,14 @@ Training with alpha=0.50 caused complete class collapse — canephora predicted 
 
 The similar prediction confidence across both classes (arabica: 0.625, canephora: 0.627) confirms the model cannot distinguish the two species, consistent with the high visual similarity between *Coffea arabica* and *Coffea canephora* in whole-plant images.
 
+Confidence threshold experiments (0.05 and 0.30) produced identical 
+results. The prediction distribution is {arabica: 89, canephora: 1} at both 
+thresholds. Since all predictions were already class 0 at similar 
+confidence (~0.62), the threshold has no effect on class selection. 
+This confirms the issue lies in what the model learned rather than the 
+decision boundary. It is consistent with Grad-CAM showing background-only 
+activations.
+
 ---
 
 ## 9. Observations
@@ -161,6 +169,8 @@ The similar prediction confidence across both classes (arabica: 0.625, canephora
 - alpha=0.75 partially recovered arabica but recall remained poor (0.10)
 - Phase 2 fine-tuning destabilised training on this dataset size
 - Similar confidence scores for both classes confirms the visual similarity challenge
+- Confidence threshold (0.05–0.30) had no effect on predictions. 
+  It confirms model instability is structural, not threshold-dependent
 
 ---
 
