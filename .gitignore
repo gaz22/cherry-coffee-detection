@@ -1,10 +1,17 @@
 # data (ignore large files)
 data/raw/
-data/processed
-data/yolo/images
-data/yolo/labels
+data/processed/
+data/yolo/images/
+data/yolo/labels/
 data/raw/*.zip
 data/raw/*.csv
+data/retinanet/
+
+# model weights
+*.pt
+*.h5
+*.keras
+*.zip
 
 # python
 __pycache__/
@@ -13,23 +20,19 @@ __pycache__/
 # virtual env
 venv/
 
-# YOLO Training Output
+# training output
 runs/
-
-# YOLO weights
-*.pt
-
-# zip files
-*.zip
-
-# retinanet training output
-data/retinanet/*
-reports/retinanet/
+reports/
 
 # outputs
+outputs/*.png
 outputs/*.h5
+outputs/gradcam/
+!outputs/tensorboard/
 
-# pthon
-__pycache__/
-*.pyc
+# os
 .DS_Store
+Thumbs.db
+
+# jupyter
+.ipynb_checkpoints/
