@@ -69,17 +69,17 @@ ability to distinguish coffee plants from visually similar vegetation.
 
 | Metric | Arabica | Canephora |
 |--------|---------|-----------|
-| Precision | 0.92 | 0.83 |
-| Recall | 0.82 | 0.93 |
-| F1 | 0.87 | 0.88 |
-| **Accuracy** | | **0.87** |
+| Precision | 0.89 | 0.76 |
+| Recall | 0.71 | 0.91 |
+| F1 | 0.79 | 0.82 |
+| **Accuracy** | | **0.81** |
 
 **Confusion matrix:**
 ```
-              Predicted
+       Predicted
               Arabica  Canephora
-True Arabica  [ 49       11 ]
-True Canephora[  4       55 ]
+True Arabica  [ 32       13 ]
+True Canephora[  4       40 ]
 ```
 
 ### 5.1 YOLOv8n — Test Set Evaluation (held-out)
@@ -178,9 +178,9 @@ activations.
 
 | Metric | YOLOv8n | RetinaNet (α=0.75) |
 |--------|---------|---------------------|
-| Arabica Recall (val) | 0.82 | 0.10 |
-| Canephora Recall (val) | 0.93 | 0.95 |
-| Val Accuracy | 0.87 | ~0.49-0.52 (Unstable) |
+| Arabica Recall (val) | 0.71 | 0.10 |
+| Canephora Recall (val) | 0.91 | 0.95 |
+| Val Accuracy | 0.81 | ~0.49-0.52 (Unstable) |
 | **Test Accuracy** | **0.81** | — |
 | mAP@50 | 0.880 | — |
 | Inference (CPU) | ~34ms | ~4s |
@@ -241,7 +241,7 @@ YOLOv8 learned plant-relevant features; RetinaNet learned background context —
 
 ## 13. Conclusion
 
-YOLOv8n achieved strong balanced performance (mAP@50=0.880, val accuracy=87%, test accuracy=81%) demonstrating that species-level coffee plant detection is feasible using auto-annotated iNaturalist data. The 6% gap between val and test accuracy reflects normal generalisation variance on a small dataset. RetinaNet exhibited persistent class bias under all configurations — alpha=0.50 caused complete collapse, while alpha=0.75 achieved only (~49%-52%) accuracy with poor arabica recall (0.10).
+YOLOv8n achieved strong balanced performance (mAP@50=0.880, val accuracy=81%, test accuracy=81%) demonstrating that species-level coffee plant detection is feasible using auto-annotated iNaturalist data. RetinaNet exhibited persistent class bias under all configurations — alpha=0.50 caused complete collapse, while alpha=0.75 achieved only (~49%-52%) accuracy with poor arabica recall (0.10).
 
 Grad-CAM analysis confirmed that YOLOv8 learned biologically meaningful features — flower morphology, cherry clusters, leaf structure — while RetinaNet attended solely to background context, explaining its failure to distinguish species. These results confirm YOLOv8n as the more appropriate architecture for small datasets with full-image annotations, while RetinaNet's strengths would be better realised with tighter per-object bounding box annotations.
 

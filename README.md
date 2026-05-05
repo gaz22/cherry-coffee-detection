@@ -82,6 +82,7 @@ coffee-cherry-detection/
 ├── outputs/                # confusion matrices, gradcam outputs
 ├── runs/detect/coffee/     # YOLOv8 training outputs (auto-generated)
 ├── notebooks/
+│   └── coffee_species_detection.ipynb
 ├── report.md
 ├── requirements.txt
 └── README.md
@@ -96,6 +97,26 @@ git clone <repo-url>
 cd coffee-cherry-detection
 pip install -r requirements.txt
 ```
+
+---
+
+## Run Notebook
+
+```bash
+# Activate virtual environment
+source venv/bin/activate
+
+# Install Jupyter inside venv (first time only)
+pip install jupyter ipykernel
+python -m ipykernel install --user --name=venv --display-name "Python (venv)"
+
+# Launch from project root
+jupyter notebook notebooks/coffee_species_detection.ipynb
+```
+
+When the notebook opens select **Kernel → Change Kernel → Python (venv)**.
+
+The notebook automatically resolves the project root — no manual path configuration needed.
 
 ---
 
@@ -148,3 +169,4 @@ See `report.md` for full results and Grad-CAM analysis.
 - 7 canephora images corrupted during download — skipped automatically
 - `dataset.yaml` auto-created on first run — not overwritten on re-runs
 - RetinaNet Phase 2 fine-tuning destabilises on small datasets — best weights always restored from Phase 1
+- Notebook must be launched from project root — see Run Notebook section above
