@@ -95,12 +95,20 @@ coffee-cherry-detection/
 ```bash
 git clone <repo-url>
 cd coffee-cherry-detection
+
+# Create and activate virtual environment
+python3.11 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
 ---
 
 ## Run Notebook
+
+> ⚠️ Images are not included in the repository. Run the full pipeline (Steps 1–3 below) before opening the notebook, otherwise image visualisation cells will fail.
 
 ```bash
 # Activate virtual environment
@@ -116,14 +124,13 @@ jupyter notebook notebooks/coffee_species_detection.ipynb
 
 When the notebook opens select **Kernel → Change Kernel → Python (venv)**.
 
-The notebook automatically resolves the project root — no manual path configuration needed.
-
 ---
 
 ## Run Pipeline
 
 ```bash
 # 1. Download images from iNaturalist CSVs
+# Place zip files in data/raw/ first (see Dataset section above)
 python -m src.data.download_data
 
 # 2. Build YOLO train/val/test split
@@ -155,7 +162,7 @@ python -m src.evaluation.gradcam_retinanet
 | Metric | YOLOv8n | RetinaNet (α=0.75) |
 |--------|---------|---------------------|
 | mAP@50 | 0.880 | — |
-| Val Accuracy | 81% | ~50% |
+| Val Accuracy | 87% | ~50% |
 | **Test Accuracy** | **81%** | — |
 | Class balance | ✅ Balanced | ❌ Unstable |
 | Inference (CPU) | ~34ms | ~4s |
@@ -169,4 +176,4 @@ See `report.md` for full results and Grad-CAM analysis.
 - 7 canephora images corrupted during download — skipped automatically
 - `dataset.yaml` auto-created on first run — not overwritten on re-runs
 - RetinaNet Phase 2 fine-tuning destabilises on small datasets — best weights always restored from Phase 1
-- Notebook must be launched from project root — see Run Notebook section above
+- Images are not tracked in git — run `python -m src.data.download_data` after cloning to download all images
