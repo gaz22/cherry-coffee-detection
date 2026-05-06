@@ -155,7 +155,7 @@ python -m src.evaluation.gradcam_retinanet
 | Metric | YOLOv8n | RetinaNet (α=0.75) |
 |--------|---------|---------------------|
 | mAP@50 | 0.880 | — |
-| Val Accuracy | 87% | ~50% |
+| Val Accuracy | 81% | ~50% |
 | **Test Accuracy** | **81%** | — |
 | Class balance | ✅ Balanced | ❌ Unstable |
 | Inference (CPU) | ~34ms | ~4s |
