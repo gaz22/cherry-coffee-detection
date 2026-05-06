@@ -1,10 +1,8 @@
 # data (ignore large files)
-data/raw/
 data/processed/
 data/yolo/images/
 data/yolo/labels/
 data/raw/*.zip
-data/raw/*.csv
 data/retinanet/
 
 # model weights

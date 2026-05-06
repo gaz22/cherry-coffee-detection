@@ -1,0 +1,661 @@
+image_path,dataset_type,taxon_id,scientific_name,species_guess,common_name
+data/processed/images/arabica_0.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_1.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_2.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_3.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_4.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_5.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_6.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_7.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_8.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_9.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_10.jpg,arabica,64342,Coffea arabica,Kopi Arabika,Coffee
+data/processed/images/arabica_11.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_12.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_13.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_14.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_15.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_16.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_17.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_18.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_19.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_20.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_21.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_22.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_23.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_24.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_25.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_26.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_27.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_28.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_29.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_30.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_31.jpg,arabica,64342,Coffea arabica,Кофе аравийский,Coffee
+data/processed/images/arabica_32.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_33.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_34.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_35.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_36.jpg,arabica,64342,Coffea arabica,Arabica-Kaffee,Coffee
+data/processed/images/arabica_37.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_38.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_39.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_40.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_41.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_42.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_43.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_44.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_45.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_46.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_47.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_48.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_49.jpg,arabica,64342,Coffea arabica,Кофе аравийский,Coffee
+data/processed/images/arabica_50.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_51.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_52.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_53.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_54.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_55.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_56.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_57.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_58.jpg,arabica,64342,Coffea arabica,Coffea arabica,Coffee
+data/processed/images/arabica_59.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_60.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_61.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_62.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_63.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_64.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_65.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_66.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_67.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_68.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_69.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_70.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_71.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_72.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_73.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_74.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_75.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_76.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_77.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_78.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_79.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_80.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_81.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_82.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_83.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_84.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_85.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_86.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_87.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_88.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_89.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_90.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_91.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_92.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_93.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_94.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_95.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_96.jpg,arabica,64342,Coffea arabica,Кофе аравийский,Coffee
+data/processed/images/arabica_97.jpg,arabica,64342,Coffea arabica,咖啡樹,Coffee
+data/processed/images/arabica_98.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_99.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_100.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_101.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_102.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_103.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_104.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_105.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_106.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_107.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_108.jpg,arabica,64342,Coffea arabica,Кофе аравийский,Coffee
+data/processed/images/arabica_109.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_110.jpg,arabica,64342,Coffea arabica,Coffea arabica,Coffee
+data/processed/images/arabica_111.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_112.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_113.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_114.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_115.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_116.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_117.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_118.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_119.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_120.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_121.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_122.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_123.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_124.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_125.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_126.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_127.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_128.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_129.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_130.jpg,arabica,64342,Coffea arabica,Caféier d'Arabie,Coffee
+data/processed/images/arabica_131.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_132.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_133.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_134.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_135.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_136.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_137.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_138.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_139.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_140.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_141.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_142.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_143.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_144.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_145.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_146.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_147.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_148.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_149.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_150.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_151.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_152.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_153.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_154.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_155.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_156.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_157.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_158.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_159.jpg,arabica,64342,Coffea arabica,Кофе аравийский,Coffee
+data/processed/images/arabica_160.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_161.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_162.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_163.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_164.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_165.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_166.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_167.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_168.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_169.jpg,arabica,64342,Coffea arabica,Kopi Arabika,Coffee
+data/processed/images/arabica_170.jpg,arabica,64342,Coffea arabica,Coffea arabica,Coffee
+data/processed/images/arabica_171.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_172.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_173.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_174.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_175.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_176.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_177.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_178.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_179.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_180.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_181.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_182.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_183.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_184.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_185.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_186.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_187.jpg,arabica,64342,Coffea arabica,Arabica-Kaffee,Coffee
+data/processed/images/arabica_188.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_189.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_190.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_191.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_192.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_193.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_194.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_195.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_196.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_197.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_198.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_199.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_200.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_201.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_202.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_203.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_204.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_205.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_206.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_207.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_208.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_209.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_210.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_211.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_212.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_213.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_214.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_215.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_216.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_217.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_218.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_219.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_220.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_221.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_222.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_223.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_224.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_225.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_226.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_227.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_228.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_229.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_230.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_231.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_232.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_233.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_234.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_235.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_236.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_237.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_238.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_239.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_240.jpg,arabica,64342,Coffea arabica,Coffea arabica,Coffee
+data/processed/images/arabica_241.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_242.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_243.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_244.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_245.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_246.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_247.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_248.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_249.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_250.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_251.jpg,arabica,64342,Coffea arabica,Кофе аравийский,Coffee
+data/processed/images/arabica_252.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_253.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_254.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_255.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_256.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_257.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_258.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_259.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_260.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_261.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_262.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_263.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_264.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_265.jpg,arabica,64342,Coffea arabica,Кофе аравийский,Coffee
+data/processed/images/arabica_266.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_267.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_268.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_269.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_270.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_271.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_272.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_273.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_274.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_275.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_276.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_277.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_278.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_279.jpg,arabica,64342,Coffea arabica,Кофе аравийский,Coffee
+data/processed/images/arabica_280.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_281.jpg,arabica,64342,Coffea arabica,Coffea arabica,Coffee
+data/processed/images/arabica_282.jpg,arabica,64342,Coffea arabica,Coffea arabica,Coffee
+data/processed/images/arabica_283.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_284.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_285.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_286.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_287.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_288.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_289.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_290.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_291.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_292.jpg,arabica,64342,Coffea arabica,Café,Coffee
+data/processed/images/arabica_293.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_294.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_295.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_296.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_297.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/arabica_298.jpg,arabica,64342,Coffea arabica,Cafeto,Coffee
+data/processed/images/arabica_299.jpg,arabica,64342,Coffea arabica,Coffee,Coffee
+data/processed/images/canephora_300.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_301.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_302.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_303.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_304.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_305.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_306.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_307.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_308.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_309.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_310.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_311.jpg,canephora,64345,Coffea canephora,Café Conilon,Robusta Coffee
+data/processed/images/canephora_312.jpg,canephora,64345,Coffea canephora,Café Conilon,Robusta Coffee
+data/processed/images/canephora_313.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_314.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_315.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_316.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_317.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_318.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_319.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_320.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_321.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_322.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_323.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_324.jpg,canephora,64345,Coffea canephora,Plants,Robusta Coffee
+data/processed/images/canephora_325.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_326.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_327.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_328.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_329.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_330.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_331.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_332.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_333.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_334.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_335.jpg,canephora,64345,Coffea canephora,Café Conilon,Robusta Coffee
+data/processed/images/canephora_336.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_337.jpg,canephora,64345,Coffea canephora,Coffea robusta,Robusta Coffee
+data/processed/images/canephora_338.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_339.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_340.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_341.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_342.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_343.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_344.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_345.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_346.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_347.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_348.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_349.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_350.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_351.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_352.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_353.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_354.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_355.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_356.jpg,canephora,64345,Coffea canephora,Coffea,Robusta Coffee
+data/processed/images/canephora_357.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_358.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_359.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_360.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_361.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_362.jpg,canephora,64345,Coffea canephora,Café Conilon,Robusta Coffee
+data/processed/images/canephora_363.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_364.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_365.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_366.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_367.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_368.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_369.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_370.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_371.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_372.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_373.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_374.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_375.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_376.jpg,canephora,64345,Coffea canephora,Café-conilon,Robusta Coffee
+data/processed/images/canephora_377.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_378.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_379.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_380.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_381.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_382.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_383.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_384.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_385.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_386.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_387.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_388.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_389.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_390.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_391.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_392.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_393.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_394.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_395.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_396.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_397.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_398.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_399.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_400.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_401.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_402.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_403.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_404.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_405.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_406.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_407.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_408.jpg,canephora,64345,Coffea canephora,Coffea robusta,Robusta Coffee
+data/processed/images/canephora_409.jpg,canephora,64345,Coffea canephora,Robusta-Kaffee,Robusta Coffee
+data/processed/images/canephora_410.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_411.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_412.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_413.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_414.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_415.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_416.jpg,canephora,64345,Coffea canephora,Coffea,Robusta Coffee
+data/processed/images/canephora_417.jpg,canephora,64345,Coffea canephora,Café Conilon,Robusta Coffee
+data/processed/images/canephora_418.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_419.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_420.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_421.jpg,canephora,64345,Coffea canephora,Plants,Robusta Coffee
+data/processed/images/canephora_422.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_423.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_424.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_425.jpg,canephora,64345,Coffea canephora,Café Conilon,Robusta Coffee
+data/processed/images/canephora_426.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_427.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_428.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_429.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_430.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_431.jpg,canephora,64345,Coffea canephora,Café-conilon,Robusta Coffee
+data/processed/images/canephora_432.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_433.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_434.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_435.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_436.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_437.jpg,canephora,64345,Coffea canephora,Café-conilon,Robusta Coffee
+data/processed/images/canephora_438.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_439.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_440.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_441.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_442.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_443.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_444.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_445.jpg,canephora,64345,Coffea canephora,Plants,Robusta Coffee
+data/processed/images/canephora_446.jpg,canephora,64345,Coffea canephora,Coffea,Robusta Coffee
+data/processed/images/canephora_447.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_448.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_449.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_450.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_451.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_452.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_453.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_454.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_455.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_456.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_457.jpg,canephora,64345,Coffea canephora,Kaffee,Robusta Coffee
+data/processed/images/canephora_458.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_459.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_460.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_461.jpg,canephora,64345,Coffea canephora,Coffea robusta,Robusta Coffee
+data/processed/images/canephora_462.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_463.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_464.jpg,canephora,64345,Coffea canephora,Kaffee,Robusta Coffee
+data/processed/images/canephora_465.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_466.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_467.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_468.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_469.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_470.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_471.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_472.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_473.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_474.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_475.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_476.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_477.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_478.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_479.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_480.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_481.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_482.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_483.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_484.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_485.jpg,canephora,64345,Coffea canephora,Caféier Robusta,Robusta Coffee
+data/processed/images/canephora_486.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_487.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_488.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_489.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_490.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_491.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_492.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_493.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_494.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_495.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_496.jpg,canephora,64345,Coffea canephora,Plants,Robusta Coffee
+data/processed/images/canephora_497.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_498.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_499.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_500.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_501.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_502.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_503.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_504.jpg,canephora,64345,Coffea canephora,Plants,Robusta Coffee
+data/processed/images/canephora_505.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_506.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_507.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_508.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_509.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_510.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_511.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_512.jpg,canephora,64345,Coffea canephora,Plants,Robusta Coffee
+data/processed/images/canephora_513.jpg,canephora,64345,Coffea canephora,Plants,Robusta Coffee
+data/processed/images/canephora_514.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_515.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_516.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_517.jpg,canephora,64345,Coffea canephora,Plants,Robusta Coffee
+data/processed/images/canephora_518.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_519.jpg,canephora,64345,Coffea canephora,Café Conilon,Robusta Coffee
+data/processed/images/canephora_520.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_521.jpg,canephora,64345,Coffea canephora,Café Conilon,Robusta Coffee
+data/processed/images/canephora_522.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_523.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_524.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_525.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_526.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_527.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_528.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_529.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_530.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_531.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_532.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_533.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_534.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_535.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_536.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_537.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_538.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_539.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_540.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_541.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_542.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_543.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_544.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_545.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_546.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_547.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_548.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_549.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_550.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_551.jpg,canephora,64345,Coffea canephora,Caféier Robusta,Robusta Coffee
+data/processed/images/canephora_552.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_553.jpg,canephora,64345,Coffea canephora,Caféier Robusta,Robusta Coffee
+data/processed/images/canephora_554.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_555.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_556.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_557.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_558.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_559.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_560.jpg,canephora,64345,Coffea canephora,Caféier Robusta,Robusta Coffee
+data/processed/images/canephora_561.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_562.jpg,canephora,64345,Coffea canephora,Caféier Robusta,Robusta Coffee
+data/processed/images/canephora_563.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_564.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_565.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_566.jpg,canephora,64345,Coffea canephora,Caféier Robusta,Robusta Coffee
+data/processed/images/canephora_567.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_568.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_569.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_570.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_571.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_572.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_573.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_574.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_575.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_576.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_577.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_578.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_579.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_580.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_581.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_582.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_583.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_584.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_585.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_586.jpg,canephora,64345,Coffea canephora,Café Conilon,Robusta Coffee
+data/processed/images/canephora_587.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_588.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_589.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_590.jpg,canephora,64345,Coffea canephora,Kopi Robusta,Robusta Coffee
+data/processed/images/canephora_591.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_592.jpg,canephora,64345,Coffea canephora,,Robusta Coffee
+data/processed/images/canephora_593.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_594.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_595.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_596.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_597.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/canephora_598.jpg,canephora,64345,Coffea canephora,Robusta Coffee,Robusta Coffee
+data/processed/images/canephora_599.jpg,canephora,64345,Coffea canephora,Coffea canephora,Robusta Coffee
+data/processed/images/negative_600.jpg,negative,121022,Morinda citrifolia,Mengkudu,Noni
+data/processed/images/negative_601.jpg,negative,1441401,Geophila herbacea,snake pennywort,snake pennywort
+data/processed/images/negative_602.jpg,negative,133309,Ixora coccinea,Jungle flame,Jungle flame
+data/processed/images/negative_603.jpg,negative,506001,Myrmecodia alata,Myrmecodia alata,
+data/processed/images/negative_604.jpg,negative,326037,Spermacoce remota,Woodland false buttonweed,Woodland false buttonweed
+data/processed/images/negative_605.jpg,negative,426640,Scyphiphora hydrophylacea,Scyphiphora hydrophylacea,Yamstick Mangrove
+data/processed/images/negative_606.jpg,negative,505935,Hydnophytum caminiferum,Hydnophytum caminiferum,
+data/processed/images/negative_607.jpg,negative,133304,Oldenlandia corymbosa,Rumput Mutiara,Old World Diamond Flower
+data/processed/images/negative_608.jpg,negative,133304,Oldenlandia corymbosa,Old World Diamond Flower,Old World Diamond Flower
+data/processed/images/negative_609.jpg,negative,133304,Oldenlandia corymbosa,Rumput Mutiara,Old World Diamond Flower
+data/processed/images/negative_610.jpg,negative,121022,Morinda citrifolia,Noni,Noni
+data/processed/images/negative_611.jpg,negative,121022,Morinda citrifolia,Noni,Noni
+data/processed/images/negative_612.jpg,negative,327747,Mussaenda philippica,queen of Philippines,queen of Philippines
+data/processed/images/negative_613.jpg,negative,121022,Morinda citrifolia,Noni,Noni
+data/processed/images/negative_614.jpg,negative,506007,Myrmecodia erinacea,Myrmecodia erinacea,
+data/processed/images/negative_615.jpg,negative,121022,Morinda citrifolia,Noni,Noni
+data/processed/images/negative_616.jpg,negative,425729,Myrmecodia tuberosa,Myrmecodia tuberosa,
+data/processed/images/negative_617.jpg,negative,327747,Mussaenda philippica,queen of Philippines,queen of Philippines
+data/processed/images/negative_618.jpg,negative,505935,Hydnophytum caminiferum,Hydnophytum caminiferum,
+data/processed/images/negative_619.jpg,negative,326037,Spermacoce remota,Woodland false buttonweed,Woodland false buttonweed
+data/processed/images/negative_620.jpg,negative,68317,Pentas lanceolata,五星花 (繁星花),Egyptian Star-cluster
+data/processed/images/negative_621.jpg,negative,133304,Oldenlandia corymbosa,Old World Diamond Flower,Old World Diamond Flower
+data/processed/images/negative_622.jpg,negative,121022,Morinda citrifolia,Noni,Noni
+data/processed/images/negative_623.jpg,negative,426301,Uncaria cordata,Uncaria cordata,
+data/processed/images/negative_624.jpg,negative,121022,Morinda citrifolia,Noni,Noni
+data/processed/images/negative_625.jpg,negative,291694,Spermacoce exilis,Pacific False Buttonweed,Pacific False Buttonweed
+data/processed/images/negative_626.jpg,negative,133309,Ixora coccinea,Jungle flame,Jungle flame
+data/processed/images/negative_627.jpg,negative,567697,Lasianthus hirsutus,Lasianthus hirsutus,
+data/processed/images/negative_628.jpg,negative,191439,Dentella repens,Creeping Dentella,Creeping Dentella
+data/processed/images/negative_629.jpg,negative,121022,Morinda citrifolia,Noni,Noni
+data/processed/images/negative_630.jpg,negative,427222,Mussaenda frondosa,wild mussaenda,wild mussaenda
+data/processed/images/negative_631.jpg,negative,133304,Oldenlandia corymbosa,Old World Diamond Flower,Old World Diamond Flower
+data/processed/images/negative_632.jpg,negative,133304,Oldenlandia corymbosa,Old World Diamond Flower,Old World Diamond Flower
+data/processed/images/negative_633.jpg,negative,427222,Mussaenda frondosa,洋玉叶金花,wild mussaenda
+data/processed/images/negative_634.jpg,negative,506001,Myrmecodia alata,Myrmecodia alata,
+data/processed/images/negative_635.jpg,negative,133304,Oldenlandia corymbosa,Old World Diamond Flower,Old World Diamond Flower
+data/processed/images/negative_636.jpg,negative,133309,Ixora coccinea,Coralito asiático enano,Jungle flame
+data/processed/images/negative_637.jpg,negative,1441401,Geophila herbacea,Geophila herbacea,snake pennywort
+data/processed/images/negative_638.jpg,negative,326037,Spermacoce remota,Woodland false buttonweed,Woodland false buttonweed
+data/processed/images/negative_639.jpg,negative,121022,Morinda citrifolia,Noni,Noni
+data/processed/images/negative_640.jpg,negative,191439,Dentella repens,Creeping Dentella,Creeping Dentella
+data/processed/images/negative_641.jpg,negative,291694,Spermacoce exilis,Spermacoce exilis,Pacific False Buttonweed
+data/processed/images/negative_642.jpg,negative,165482,Mitracarpus hirtus,Tropical Girdlepod,Tropical Girdlepod
+data/processed/images/negative_643.jpg,negative,366267,Guettarda speciosa,Beach Gardenia,Beach Gardenia
+data/processed/images/negative_644.jpg,negative,326037,Spermacoce remota,Woodland false buttonweed,Woodland false buttonweed
+data/processed/images/negative_645.jpg,negative,1441401,Geophila herbacea,Geophila herbacea,snake pennywort
+data/processed/images/negative_646.jpg,negative,121022,Morinda citrifolia,Mengkudu,Noni
+data/processed/images/negative_647.jpg,negative,121022,Morinda citrifolia,Noni,Noni
+data/processed/images/negative_648.jpg,negative,133309,Ixora coccinea,Coralito asiático enano,Jungle flame
+data/processed/images/negative_649.jpg,negative,857206,Morinda coreia,Indian Mulberry,Indian Mulberry
+data/processed/images/negative_650.jpg,negative,780693,Spermacoce ocymifolia,Slender buttonweed,Slender buttonweed
+data/processed/images/negative_651.jpg,negative,133304,Oldenlandia corymbosa,Old World Diamond Flower,Old World Diamond Flower
+data/processed/images/negative_652.jpg,negative,133304,Oldenlandia corymbosa,Rumput Mutiara,Old World Diamond Flower
+data/processed/images/negative_653.jpg,negative,327747,Mussaenda philippica,queen of Philippines,queen of Philippines
+data/processed/images/negative_654.jpg,negative,505993,Hydnophytum tortuosum,Hydnophytum tortuosum,
+data/processed/images/negative_655.jpg,negative,1236758,Coprosma brassii,Coprosma brassii,
+data/processed/images/negative_656.jpg,negative,426996,Lasianthus attenuatus,Small-leaved Lasianthus,Small-leaved Lasianthus
+data/processed/images/negative_657.jpg,negative,427222,Mussaenda frondosa,wild mussaenda,wild mussaenda
+data/processed/images/negative_658.jpg,negative,121022,Morinda citrifolia,Noni,Noni
+data/processed/images/negative_659.jpg,negative,506001,Myrmecodia alata,Myrmecodia alata,
